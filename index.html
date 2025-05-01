@@ -1,14 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Web Audio Mixer</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    #progressTooltip {
+      position: absolute;
+      padding: 4px 8px;
+      background: #222;
+      color: #fff;
+      font-size: 12px;
+      border-radius: 4px;
+      pointer-events: none;
+      display: none;
+    }
+    .loop-handle {
+      position: absolute;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      background: red;
+      cursor: ew-resize;
+    }
+  </style>
 </head>
 <body>
-  <button id="playToggle">Play</button>
-  <canvas id="mixerCanvas" width="600" height="600"></canvas>
-  <div id="progressContainer"><div id="progressBar"></div></div>
-  <script src="script.js"></script>
+<button id="playToggle">Play</button>
+<canvas id="mixerCanvas" width="600" height="600"></canvas>
+<div id="progressContainer" style="position:relative;">
+  <div id="progressBar"></div>
+  <div id="loopStart" class="loop-handle" style="left: 100px;"></div>
+  <div id="loopEnd" class="loop-handle" style="left: 400px;"></div>
+  <div id="progressTooltip"></div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
