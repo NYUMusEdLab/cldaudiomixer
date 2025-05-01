@@ -1,0 +1,36 @@
+
+body {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  background-color: #111;
+}
+
+#progressContainer {
+  width: 600px;
+  height: 10px;
+  background: #333;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+#progressBar {
+  height: 100%;
+  width: 0%;
+  background: #00ff88;
+  border-radius: 5px;
+}
